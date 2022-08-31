@@ -1,6 +1,6 @@
 from django.db import models
 
-class employees(models.Model):
+class Employees(models.Model):
     name = models.CharField(max_length=120)
     department = models.CharField(max_length=120)
     salary = models.PositiveIntegerField()
@@ -10,4 +10,3 @@ class employees(models.Model):
     def __str__(self):
         return self.name
 
-        
